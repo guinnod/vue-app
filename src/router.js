@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import EmailPage from "./pages/EmailPage.vue";
 import HomePage from "./pages/HomePage.vue";
+import InvoicePage from "./pages/InvoicePage.vue";
 
 const routes = [
     {
@@ -11,6 +12,11 @@ const routes = [
         path: "/email",
         name: "EmailPage",
         component: EmailPage,
+    },
+    {
+        path: "/invoice",
+        name: "InvoicePage",
+        component: InvoicePage,
     },
 ];
 
