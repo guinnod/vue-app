@@ -7,55 +7,52 @@
 
         <div class="right-side">
             <LanguageButton></LanguageButton>
-            <img :src="require('@/assets/settings.png')" alt="">
-            <img :src="require('@/assets/megaphone.png')" alt="">
+            <img :src="require('@/assets/settings.png')" alt="" />
+            <img :src="require('@/assets/megaphone.png')" alt="" />
             <HeaderAccount></HeaderAccount>
-        </div> 
+        </div>
     </div>
 </template>
 
 <script>
-    import AppLogo from './AppLogo.vue'
-    import SearchBar from './SearchBar.vue';
-    import LanguageButton from './LanguageButton.vue';
-    import HeaderAccount from './HeaderAccount.vue';
+import AppLogo from "./AppLogo.vue";
+import SearchBar from "./SearchBar.vue";
+import LanguageButton from "./LanguageButton.vue";
+import HeaderAccount from "./HeaderAccount.vue";
 
-    export default {
-        name: 'App',
-        components: {
+export default {
+    name: "App",
+    components: {
         AppLogo,
         SearchBar,
         LanguageButton,
-        HeaderAccount
-        }
-    }
+        HeaderAccount,
+    },
+};
 </script>
 
 <style>
-    .container{
-        width: 100vw;
-        height: 100px;
-        display: flex;
-        justify-content: space-between;
-        margin: 1% 2% 1% 2%;
-        align-items: center;
-    }
-    .left-side{
-        display: flex;
-        width: 600px;
-        justify-content: space-between;
-
-    }
-    .right-side{
-        display: flex;
-        width: 520px;
-        justify-content: space-between;
-        align-items: center;
-    }
-    img{
-        width: 20px;
-        height: 20px;
-    }
+.container {
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin: 1% 2% 1% 2%;
+    align-items: center;
+}
+.left-side {
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+}
+.right-side {
+    display: flex;
+    width: 520px;
+    justify-content: space-between;
+    align-items: center;
+}
+img {
+    width: 20px;
+    height: 20px;
+}
 </style>
-
-  
